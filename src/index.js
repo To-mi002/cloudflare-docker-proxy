@@ -1,4 +1,5 @@
-addEventListener("fetch", (event) => {
+  import DOCS from './tips.html'
+  addEventListener("fetch", (event) => {
   event.passThroughOnException();
   event.respondWith(handleRequest(event.request));
 });
@@ -43,7 +44,7 @@ async function handleRequest(request) {
       }
     );
   }
-  import DOCS from './tips.html'
+
  
 // return tips.html
 if (url.pathname === "/") {
